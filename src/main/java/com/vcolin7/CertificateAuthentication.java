@@ -38,7 +38,7 @@ public final class CertificateAuthentication {
         ClientCertificateCredential clientCertificateCredential = new ClientCertificateCredentialBuilder()
             .clientId("<client-id>")
             .tenantId("<tenant-id>")
-            .pfxCertificate("<certificate-path>", null)
+            .pfxCertificate("<certificate-path>")
             .build();
 
         SecretClient secretClient = new SecretClientBuilder()
